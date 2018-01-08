@@ -1,0 +1,36 @@
+.cal{text-align: center;
+	 border: 2px solid white;
+	 width:30%;
+	 margin: 5px auto;
+	 background-color:#215165;}
+.h1{text-align: center;}
+.texts{padding: 8px;
+	   height: 40px;
+	   width:78%;
+	   background-color: #b1aa6f;
+		margin-bottom: 5px;
+		text-align: right;}
+.button_black{height: 30px;
+ 	    font-size: 15px;
+    	margin-bottom: 5px;
+    	width: 60px;
+    	padding: 5px;
+    	color: white;
+    	border-radius: 22px;
+    	background-color: black;}
+.button_grey{height: 30px;
+ 	    font-size: 15px;
+    	margin-bottom: 5px;
+    	width: 60px;
+    	padding: 5px;
+    	color: white;
+    	border-radius: 22px;
+    	background-color: grey;}
+.button_red{height: 30px;
+ 	    font-size: 15px;
+    	margin-bottom: 5px;
+    	width: 60px;
+    	padding: 5px;
+    	color: white;
+    	border-radius: 22px;
+    	background-color: red;}

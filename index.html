@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Scientific calculator</title>
+	<link rel="stylesheet" type="text/css" href="calci.css">
+	<script>
+		function display(n1)
+		{
+			calci.text.value=calci.text.value+n1;
+		}
+		function changesign(input)
+		{
+			if(calci.text.value.substring(0,1)=='-')
+				calci.text.value=calci.text.value.substring(1,calci.text.value.length)
+			else
+				calci.text.value='-'+calci.text.value
+		}
+		</script>
+</head>
+<body>
+	<div class="cal">
+		<h1>Scientific Calculator</h1>
+			<form name="calci">		
+			<input class="texts" type="text" name="text">
+			<br>
+			<input class="button_black" type="button" name="sin" value="SIN" onclick="text.value=Math.sin(text.value)">
+			<input class="button_black" type="button" name="cos" value="COS" onclick="text.value=Math.cos(text.value)">
+			<input  class="button_black" type="button" name="tan" value="TAN" onclick="text.value=Math.tan(text.value)">
+			<input class="button_black" type="button" name="sin" value="(-)" onclick="changesign(text.value)">
+			<input class="button_black" type="button" name="abs" value="abs" onclick="text.value=Math.abs(text.value)">
+			<br>
+			<input  class="button_black" type="button" name="squareroot" value="&radic;" onclick="text.value=Math.sqrt(text.value)">
+			<input class="button_black" type="button" name="square"value="SQR" onclick="text.value=Math.pow(text.value,2)">
+			<input class="button_black" type="button" name="power" value="^" onclick="text.value=Math.pow(text.value,text.value)">
+			<input class="button_black" type="button" name="log" value="LOG" onclick="text.value=Math.log(text.value)">
+			<input class="button_black" type="button" name="ln" value="ln" onclick="text.value=Math.E">
+			<br>
+			<input class="button_black" type="button" name="clear" value="CLR" onclick="text.value=' '">
+			<input class="button_black" type="button" name="open" value="("onclick="text.value+='('">
+			<input class="button_black" type="button" name="close" value=")"onclick="text.value+=')'">
+			<input class="button_black" type="button" name="memory" value="m+" onclick="text.value+='m+'">
+			<input class="button_black" type="button" name="mod" value="MOD"onclick="text.value+='%'">
+			<br>
+			<input class="button_grey" type="button" name="button9" value="9" onclick="display(button9.value)">
+			<input class="button_grey" type="button" name="button8" value="8" onclick="display(button8.value)">
+			<input class="button_grey" type="button" name="button7" value="7" onclick="display(button7.value)">
+			<input class="button_red" type="button" name="delete" value="DEL"onclick="text.value=text.value.substring(0,text.value.length-1)">
+			<input class="button_red" type="button" name="exit" value="EXIT">
+			<br>
+			<input class="button_grey" type="button" name="button4" value="4" onclick="display(button4.value)">
+			<input class="button_grey" type="button" name="button5" value="5" onclick="display(button5.value)">
+			<input class="button_grey" type="button" name="button6" value="6" onclick="display(button6.value)">
+			<input class="button_grey" type="button" name="mul" value="*" onclick="display(mul.value)">
+			<input class="button_grey" type="button" name="div" value="/" onclick="display(div.value)">
+			<br>
+			<input class="button_grey" type="button" name="button1" value="1" onclick="display(button1.value)">
+			<input class="button_grey" type="button" name="button2" value="2" onclick="display(button2.value)">
+			<input class="button_grey" type="button" name="button3" value="3" onclick="display(button3.value)">
+			<input class="button_grey" type="button" name="add" value="+" onclick="display(add.value)">
+			<input class="button_grey" type="button" name="sub" value="-" onclick="display(sub.value)">
+			<br>
+			<input class="button_grey" type="button" name="button0" value="0" onclick="display(button0.value)">
+			<input class="button_grey" type="button" name="dot" value="." onclick="display(dot.value)">
+			<input class="button_grey" type="button" name="exp" value="EXP" onclick="text.value+=Math.exp(text.value)">
+			<input class="button_grey" type="button" name="pi" value="PI" onclick="text.value+=Math.PI">
+			<input class="button_grey" type="button" name="equal" value="=" onclick="text.value=eval(text.value)">
+			<br>
+		
+	</div>
+
+
+</body>
+</html>
